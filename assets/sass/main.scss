@@ -1,0 +1,22 @@
+// MANIFIESTO
+
+// Abstracts
+@import 'abstracts/variables';
+
+// Vendors
+@import 'vendors/scss/bootstrap.scss';
+// Base
+@import 'base/base';
+@import 'base/reset';
+// Layout
+@import 'layout/grid';
+@import 'layout/header';
+@import 'layout/hero';
+@import 'layout/about';
+@import 'layout/destacados';
+@import 'layout/recetas';
+@import 'layout/footer';
+//Components
+
+// Page
+// Themes

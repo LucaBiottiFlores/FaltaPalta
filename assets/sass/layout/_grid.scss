@@ -1,0 +1,70 @@
+// Grid Layout
+
+// Grid Container Styles
+
+.grid-container {
+    display: grid;
+    width: 100%;
+    height: 100%;
+    grid-template: 55px 6% 21% 33% 40% 80px / 100%;
+    grid-template-areas: "header" "hero" "about" "music" "recetas" "footer";
+  }
+
+  @media (min-width: 992px) {
+    .grid-container {
+      grid-template: 58px 30% 70% 60px / 50% 50%;
+      grid-template-areas: "header header"  "hero hero"  "about music" "footer footer" ;
+    }
+  }
+
+// Grid Areas
+
+.header {
+  background: black;
+  
+}
+
+.hero {
+  background: green;
+}
+
+.music {
+  background: $lightgray;
+}
+
+.about {
+  background:white;
+}
+
+.recetas {
+  background: white;
+}
+
+.footer {
+  background: black;
+}
+
+
+[data-grid-area="hero"]{
+    grid-area: hero;
+}
+
+[data-grid-area="header"]{
+    grid-area: header;
+}
+
+[data-grid-area="destacados"]{
+    grid-area: destacados;
+}
+
+[data-grid-area="about"]{
+    grid-area: about;
+}
+
+[data-grid-area="recetas"]{
+  grid-area: recetas;
+}
+
+[data-grid-area="footer"]{
+    grid-area: footer;
+}

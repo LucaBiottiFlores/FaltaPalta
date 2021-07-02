@@ -1,0 +1,32 @@
+
+
+.about {
+    padding-top: 7.5vh;
+}
+.about_content-title {
+    text-align: center;
+    font-weight: $bold;
+}
+
+.about_content {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding-top: 5vh;
+    .about_content-img {
+        width: 200px;
+        height: 200px;
+        border-radius: 50%;
+        margin-right: auto;
+        margin-left: auto;
+        border: 5px dotted #e98062;
+    }
+    .about_content-text {
+        font-size: $small;
+        text-align: center;
+        margin-left: .5em;
+        margin-right: .5em;
+        line-height: 2em;
+    }
+   
+}

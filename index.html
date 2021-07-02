@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Falta Palta</title>
+    <!--Hoja de estilos-->
+    <link rel="stylesheet" href="assets/css/main.css">
+    <!--Google Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <!--Font Awesome-->
+    <script src="https://kit.fontawesome.com/36dbeb1a64.js" crossorigin="anonymous"></script>
+</head>
+<body>
+<div class="grid-container">    
+
+    <header class="header" data-grid-area="header">
+        <!--Navbar-->
+        <nav class="navbar navbar-expand-lg navbar-dark fixed-top" style="background-color: #e98062;">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="#"><img class="paltita_chiquita" src="assets/img/palta_logo_sola.png" alt="palta_chiquita"> Falta Palta</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">Inicio</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Sobre Nosotros</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Productos</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link " href="#">Recetas</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+        <!--navbar end-->
+    </header>
+    <section class="hero" data-grid-area="hero">
+    <!--Carousel-->
+<div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="assets/img/carusel_1.jpg" class="d-block w-100" alt="img-carousel-1">
+    </div>
+    <div class="carousel-item">
+      <img src="assets/img/carusel_2.jpg" class="d-block w-100" alt="img-carousel-2">
+    </div>
+    <div class="carousel-item">
+      <img src="assets/img/carusel_3.jpg" class="d-block w-100" alt="img-carousel-3">
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+
+    </section>
+
+
+    <section class="about" data-grid-area="about">
+      <h3 class="about_content-title">Falta Palta</h3>
+        <div class="about_content">
+          <img class="about_content-img" src="assets/img/palta_about.png" alt="paltaPartidaEnDos">
+          
+          <p class="about_content-text">¿Te falta paltita rica? estás en el lugar indicado.<br> En FaltaPalta no solo te ofrecemos la más exquisita Palta Hass, ¡sino que además te la llevamos a la puerta de tu casa! <br> Contamos además con el infaltable y delicioso café en grano "Lucaffe" y más productos imperdibles. <br>¡Que no te falte palta!</p>
+        </div>
+    </section>
+    <section class="music" data-grid-area="music">
+      <h3 class="productos_destacados_title">Productos Destacados</h3>
+      <!--Cards-->
+      <div class="card-group card-group-1">
+        <div class="card">
+          <img src="assets/img/palta_card.jpg" class="card-img-top img-card" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Palta Hass</h5>
+            <p class="card-text">La mejor palta po papito papurri papá</p>
+            
+          </div>
+        </div>
+        <div class="card">
+          <img src="assets/img/lucaffe.jpg" class="card-img-top img-card" alt="bolsa_de_cafe">
+          <div class="card-body">
+            <h5 class="card-title">Cafe en grano Lucaffe</h5>
+            <p class="card-text">Cafesito rico de un pais sabroso.</p>
+            
+          </div>
+        </div>
+    
+      </div>
+
+    </section>
+
+    <section class="recetas" data-grid-area="recetas">
+
+      <h3 class="recetas_titulo">¿Quieres comer tu palta de nuevas maneras?</h3>
+
+      <div class="card-group card-group-1">
+        <div class="card">
+          <img src="assets/img/receta_1.png" class="card-img-top img-card" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Hamburguesa con palta tempura</h5>
+            <p class="card-text">Rico po weon</p>
+            
+          </div>
+        </div>
+        <div class="card">
+          <img src="assets/img/receta_2.png" class="card-img-top img-card" alt="bolsa_de_cafe">
+          <div class="card-body">
+            <h5 class="card-title">La clasica: Tostada con palta</h5>
+            <p class="card-text">No es nuevo, pero no falla</p>
+            
+          </div>
+        </div>
+    
+      </div>
+
+    </section>
+
+    <footer class="footer" data-grid-area="footer">
+      <p class="footer-text">Falta Palta<br>  ®Todos los derechos reservados.</p>
+    </footer>
+
+</div>
+
+
+
+
+
+<!--Bootstrap JS-->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</body>
+</html>
