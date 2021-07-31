@@ -14,12 +14,13 @@
     flex-wrap: wrap;
     padding-top: 5vh;
     .about_content-img {
-        width: 200px;
-        height: 200px;
+        width: 250px;
+        height: 250px;
         border-radius: 50%;
         margin-right: auto;
         margin-left: auto;
-        border: 5px dotted #e98062;
+        border: 7px inset #e98062;
+        margin-bottom: 1em;
     }
     .about_content-text {
         font-size: $small;
