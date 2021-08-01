@@ -10735,6 +10735,12 @@ body {
   font-family: "Roboto", sans-serif;
 }
 
+@media (min-width: 758px) {
+  body {
+    font-size: 30px;
+    text-shadow: gray 0.5px 0.5px 1px;
+  }
+}
 /* Reset*/
 body *, html * {
   margin: 0;
@@ -10755,10 +10761,22 @@ img {
   grid-template-areas: "header" "hero" "about" "music" "recetas" "footer";
 }
 
+@media (min-width: 576px) {
+  .grid-container {
+    grid-template: 55px 12% 30% 33% 30% 80px/100%;
+    grid-template-areas: "header" "hero" "about" "music" "recetas" "footer";
+  }
+}
+@media (min-width: 758px) {
+  .grid-container {
+    grid-template: 55px 17% 36% 33% 30% 135px/100%;
+    grid-template-areas: "header" "hero" "about" "music" "recetas" "footer";
+  }
+}
 @media (min-width: 992px) {
   .grid-container {
-    grid-template: 58px 30% 70% 60px/50% 50%;
-    grid-template-areas: "header header" "hero hero" "about music" "footer footer";
+    grid-template: 55px 34% 28% 39% 135px/50% 50%;
+    grid-template-areas: "header header" "hero hero" "about about" "music recetas" "footer footer";
   }
 }
 .header {
@@ -10766,7 +10784,7 @@ img {
 }
 
 .hero {
-  background: green;
+  background: #fff;
 }
 
 .music {
@@ -10809,6 +10827,10 @@ img {
   grid-area: footer;
 }
 
+.navbar {
+  box-shadow: black 1px 1px 4px;
+}
+
 .paltita_chiquita {
   width: 40px;
   padding-right: 0.3em;
@@ -10817,14 +10839,49 @@ img {
 .navbar-brand {
   font-family: "Bebas Neue", cursive;
   font-size: 30px;
+  text-shadow: black 1px 1px 2px;
 }
 
+@media (min-width: 992px) {
+  .paltita_chiquita {
+    width: 60px;
+    padding-right: 0.3em;
+  }
+
+  .navbar-brand {
+    font-family: "Bebas Neue", cursive;
+    font-size: 40px;
+    text-shadow: black 2px 2px 4px;
+  }
+
+  .navbar-nav {
+    margin-left: auto;
+    margin-right: 1vw;
+    font-size: 20px;
+    text-shadow: black 1px 1px 2px;
+  }
+}
 .carousel-item {
   max-height: 220px;
 }
 
+@media (min-width: 576px) {
+  .carousel-item {
+    max-height: 360px;
+  }
+}
+@media (min-width: 768px) {
+  .carousel-item {
+    max-height: 500px;
+  }
+}
+@media (min-width: 992px) {
+  .carousel-item {
+    max-height: 800px;
+  }
+}
 .about {
-  padding-top: 7.5vh;
+  padding-top: 11vh;
 }
 
 .about_content-title {
@@ -10848,13 +10905,84 @@ img {
   margin-bottom: 1em;
 }
 .about_content .about_content-text {
-  font-size: 14px;
   text-align: center;
   margin-left: 0.5em;
   margin-right: 0.5em;
   line-height: 2em;
 }
 
+@media (min-width: 576px) {
+  .about {
+    padding-top: 12vh;
+  }
+}
+@media (min-width: 758px) {
+  .about {
+    padding-top: 6vh;
+  }
+
+  .about_content-title {
+    font-size: 40px;
+  }
+
+  .about_content {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding-top: 5vh;
+  }
+  .about_content .about_content-img {
+    width: 450px;
+    height: 450px;
+    border-radius: 50%;
+    margin-right: auto;
+    margin-left: auto;
+    border: 7px inset #e98062;
+    margin-bottom: 1em;
+  }
+  .about_content .about_content-text {
+    text-align: center;
+    margin-left: 0.5em;
+    margin-right: 0.5em;
+    line-height: 2em;
+  }
+}
+@media (min-width: 992px) {
+  .about {
+    margin: 5vh;
+  }
+
+  .about_content-title {
+    padding-top: 5vh;
+    font-size: 40px;
+    text-align: center;
+  }
+
+  .about_content {
+    display: flex;
+    justify-content: center;
+    flex-wrap: nowrap;
+    padding-top: 5vh;
+    padding-left: 5vh;
+  }
+  .about_content .about_content-img {
+    width: 350px;
+    height: 350px;
+    border-radius: 50%;
+    margin-right: auto;
+    margin-left: auto;
+    border: 7px inset #e98062;
+    margin-bottom: 1em;
+  }
+  .about_content .about_content-text {
+    font-size: 20px;
+    text-align: left;
+    margin-left: 3em;
+    margin-right: 2em;
+    padding-top: 8vh;
+    line-height: 2em;
+  }
+}
 .img-card {
   width: 400px;
 }
@@ -10870,12 +10998,50 @@ img {
   margin: 5em 1em 1em 1em;
 }
 
+@media (min-width: 758px) {
+  .productos_destacados_title {
+    font-size: 40px;
+  }
+
+  .cardTitle {
+    font-size: 30px;
+    font-weight: 700;
+  }
+}
+@media (min-width: 992px) {
+  .cardTitle {
+    font-size: 20px;
+    font-weight: 700;
+  }
+
+  .card-text {
+    font-size: 20px;
+  }
+}
 .recetas_titulo {
   text-align: center;
   margin-top: 2em;
   font-weight: 700;
 }
 
+@media (min-width: 576px) {
+  .card {
+    margin: 1vh;
+  }
+
+  .recetas_titulo {
+    font-size: 35px;
+  }
+}
+@media (min-width: 992px) {
+  .recetas_titulo {
+    padding-top: 2.6vh;
+  }
+
+  .card {
+    margin: 0.2vh 1vh;
+  }
+}
 .footer-text {
   color: #fff;
   text-align: center;

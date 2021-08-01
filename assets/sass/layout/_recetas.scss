@@ -5,3 +5,23 @@
     margin-top: 2em;
     font-weight: $bold;
 }
+
+@media (min-width: 576px) {
+    .card {
+        margin: 1vh;
+    }
+
+    .recetas_titulo {
+        font-size: $xx-large;
+    }
+}
+
+@media (min-width: 992px) {
+   
+    .recetas_titulo {
+        padding-top: 2.6vh;
+    }
+    .card {
+        margin: .2vh 1vh;
+    }
+}

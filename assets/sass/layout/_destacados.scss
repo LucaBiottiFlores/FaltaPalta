@@ -14,3 +14,27 @@
 .card-group-1 {
     margin: 5em 1em 1em 1em;
 }
+
+@media (min-width: 758px) {
+    .productos_destacados_title {
+        font-size: $xxx-large;
+    }
+
+
+    .cardTitle {
+        font-size: $x-large;
+        font-weight: $bold;
+    }
+
+ 
+}
+@media (min-width: 992px) {
+    .cardTitle {
+        font-size: $large;
+        font-weight: $bold;
+    }
+    .card-text {
+        font-size: $large;
+    }
+  
+}

@@ -3,3 +3,21 @@
 .carousel-item {
     max-height: 220px;
 }
+
+@media (min-width: 576px) {
+    .carousel-item {
+        max-height: 360px;
+    }
+}
+
+@media (min-width: 768px) {
+    .carousel-item {
+        max-height: 500px;
+    }
+}
+
+@media (min-width: 992px) {
+    .carousel-item {
+        max-height: 800px;
+    }
+}

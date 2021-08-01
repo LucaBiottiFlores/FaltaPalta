@@ -10,10 +10,24 @@
     grid-template-areas: "header" "hero" "about" "music" "recetas" "footer";
   }
 
+  @media (min-width: 576px) {
+    .grid-container {
+      grid-template: 55px 12% 30% 33% 30% 80px / 100%;
+      grid-template-areas: "header" "hero" "about" "music" "recetas" "footer";
+    }
+    }
+
+  @media (min-width: 758px) {
+      .grid-container {
+        grid-template: 55px 17% 36% 33% 30% 135px / 100%;
+        grid-template-areas: "header" "hero" "about" "music" "recetas" "footer";
+      }
+      }
+
   @media (min-width: 992px) {
     .grid-container {
-      grid-template: 58px 30% 70% 60px / 50% 50%;
-      grid-template-areas: "header header"  "hero hero"  "about music" "footer footer" ;
+      grid-template: 55px 34% 28% 39% 135px / 50% 50%;
+      grid-template-areas: "header header" "hero hero" "about about" "music recetas" "footer footer" ;
     }
   }
 
@@ -25,7 +39,7 @@
 }
 
 .hero {
-  background: green;
+  background:$white;
 }
 
 .music {

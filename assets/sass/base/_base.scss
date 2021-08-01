@@ -3,3 +3,11 @@ body {
     background-color: $white;
     font-family: $roboto;
     }
+
+@media (min-width: 758px) {
+    body {
+        font-size: $x-large;
+        text-shadow: gray .5px .5px 1px;
+        
+    }
+}
